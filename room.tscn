@@ -34,12 +34,12 @@ offset_left = 219.0
 offset_top = -227.0
 offset_right = 509.0
 offset_bottom = 236.0
-theme_override_font_sizes/normal_font_size = 20
-theme_override_font_sizes/bold_font_size = 20
-theme_override_font_sizes/bold_italics_font_size = 20
-theme_override_font_sizes/italics_font_size = 20
-theme_override_font_sizes/mono_font_size = 20
-text = "Lorem Ipsum Dolor Sit Amet..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................."
+theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/bold_font_size = 17
+theme_override_font_sizes/bold_italics_font_size = 17
+theme_override_font_sizes/italics_font_size = 17
+theme_override_font_sizes/mono_font_size = 17
+bbcode_enabled = true
 script = ExtResource("2_ka7wq")
 
 [node name="Title" type="RichTextLabel" parent="UI/ManualView" unique_id=1147214413]
@@ -73,9 +73,9 @@ scale = Vector2(0.30583942, 1)
 texture = ExtResource("1_88gup")
 script = ExtResource("3_4o3f6")
 
-[node name="ClickerArea" parent="Background/Desk/Drawer1" unique_id=351695335 instance=ExtResource("4_v5vuv")]
+[node name="ClickerArea1" parent="Background/Desk/Drawer1" unique_id=351695335 instance=ExtResource("4_v5vuv")]
 
-[node name="CollisionShape2D" parent="Background/Desk/Drawer1/ClickerArea" index="0" unique_id=1157027649]
+[node name="CollisionShape2D" parent="Background/Desk/Drawer1/ClickerArea1" index="0" unique_id=1157027649]
 position = Vector2(0, 1)
 scale = Vector2(0.9999998, 0.9999997)
 
@@ -126,11 +126,10 @@ texture = ExtResource("1_88gup")
 [node name="Timer" type="Timer" parent="." unique_id=591089242]
 wait_time = 5.0
 one_shot = true
-autostart = true
 
-[connection signal="input_event" from="Background/Desk/Drawer1/ClickerArea" to="Background/Desk/Drawer1" method="_on_clicker_area_input_event"]
+[connection signal="input_event" from="Background/Desk/Drawer1/ClickerArea1" to="Background/Desk/Drawer1" method="_on_clicker_area_input_event"]
 [connection signal="input_event" from="Background/Desk/BombDefusal101/ClickerArea" to="UI/ManualView" method="_on_clicker_area_input_event"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 
-[editable path="Background/Desk/Drawer1/ClickerArea"]
+[editable path="Background/Desk/Drawer1/ClickerArea1"]
 [editable path="Background/Desk/BombDefusal101/ClickerArea"]
