@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bgq045shnoae5"]
+
+[ext_resource type="Texture2D" uid="uid://c6f8sa6bb3c3j" path="res://icon.svg" id="1_88gup"]
+[ext_resource type="Script" uid="uid://u1rpyy6682km" path="res://bomb.gd" id="2_bisa2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bisa2"]
+size = Vector2(104, 92)
+
+[node name="Room" type="Node2D" unique_id=1727501541]
+
+[node name="UI" type="Control" parent="." unique_id=1778332698]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1778636829]
+scale = Vector2(9, 5)
+texture = ExtResource("1_88gup")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1560669151]
+
+[node name="Bomb" type="Sprite2D" parent="." unique_id=1916202991]
+position = Vector2(-375, -157)
+texture = ExtResource("1_88gup")
+script = ExtResource("2_bisa2")
+
+[node name="Area2D" type="Area2D" parent="Bomb" unique_id=1000263256]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bomb/Area2D" unique_id=955012777]
+position = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_bisa2")
+
+[connection signal="input_event" from="Bomb/Area2D" to="Bomb" method="_on_area_2d_input_event"]
