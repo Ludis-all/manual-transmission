@@ -3,10 +3,12 @@
 [ext_resource type="Script" uid="uid://boff3bhbhm0jl" path="res://countdown.gd" id="1_4o3f6"]
 [ext_resource type="Script" uid="uid://8kfp6xk848y3" path="res://displayText.gd" id="2_ka7wq"]
 [ext_resource type="Texture2D" uid="uid://csjennosqiw8f" path="res://WhiteBackground.png" id="3_ka7wq"]
-[ext_resource type="Texture2D" uid="uid://bomy76vqoky1x" path="res://image.png" id="3_x5k2b"]
 [ext_resource type="Texture2D" uid="uid://6p1oxu4ppwp0" path="res://Map-1.png" id="4_8cv3p"]
+[ext_resource type="Texture2D" uid="uid://b44weigl1gq3e" path="res://roomnodrawers.png" id="5_8cv3p"]
 [ext_resource type="Script" uid="uid://dib8uqvp3jfal" path="res://lightbulb.gd" id="7_01y1d"]
 [ext_resource type="Texture2D" uid="uid://dk6p0i7728bfp" path="res://BlackBackground.png" id="7_8cv3p"]
+[ext_resource type="Script" uid="uid://c0ek4c722ykow" path="res://drawer_1.gd" id="8_01y1d"]
+[ext_resource type="Script" uid="uid://dyirmk5kbjc8v" path="res://drawer_2.gd" id="9_42v8c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vuv"]
 size = Vector2(13.722221, 101.59998)
@@ -20,14 +22,11 @@ size = Vector2(201.11111, 97.399994)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_42v8c"]
 size = Vector2(168.44444, 132.4)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mb7s7"]
-size = Vector2(70.44446, 80)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xorjj"]
 size = Vector2(155.44441, 120.65001)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xwbdb"]
-size = Vector2(168.55554, 43.299988)
+size = Vector2(81.388916, 104.900024)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_voycu"]
 size = Vector2(200.16666, 145.20001)
@@ -35,8 +34,20 @@ size = Vector2(200.16666, 145.20001)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6tcb1"]
 size = Vector2(146.88895, 229.79999)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mb7s7"]
+size = Vector2(68.88887, 89.10001)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0f4jx"]
-size = Vector2(76.61109, 104.375)
+size = Vector2(102, 137)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0wn2"]
+size = Vector2(87.33332, 65.3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l46xq"]
+size = Vector2(107.166664, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7lnt"]
+size = Vector2(188, 43)
 
 [node name="Room" type="Node2D" unique_id=1727501541]
 script = ExtResource("1_4o3f6")
@@ -161,7 +172,7 @@ text = "Otechestva"
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1778636829]
 scale = Vector2(9, 5)
-texture = ExtResource("3_x5k2b")
+texture = ExtResource("5_8cv3p")
 
 [node name="Lightbulb" type="Area2D" parent="Background" unique_id=178162987]
 script = ExtResource("7_01y1d")
@@ -196,12 +207,6 @@ shape = SubResource("RectangleShape2D_01y1d")
 position = Vector2(220.11113, 353.2)
 shape = SubResource("RectangleShape2D_42v8c")
 
-[node name="celebration" type="Area2D" parent="Background" unique_id=1706566842]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/celebration" unique_id=1183434817]
-position = Vector2(-307, 237.20003)
-shape = SubResource("RectangleShape2D_mb7s7")
-
 [node name="intercept" type="Area2D" parent="Background" unique_id=528368693]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/intercept" unique_id=1018905717]
@@ -211,7 +216,7 @@ shape = SubResource("RectangleShape2D_xorjj")
 [node name="carlson" type="Area2D" parent="Background" unique_id=155223717]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/carlson" unique_id=1133777773]
-position = Vector2(-180.61111, -335.45)
+position = Vector2(-730.0278, -349.85)
 shape = SubResource("RectangleShape2D_xwbdb")
 
 [node name="panelproblem" type="Area2D" parent="Background" unique_id=955063701]
@@ -226,11 +231,55 @@ shape = SubResource("RectangleShape2D_voycu")
 position = Vector2(695.77783, -244.5)
 shape = SubResource("RectangleShape2D_6tcb1")
 
-[node name="carlson2" type="Area2D" parent="Background" unique_id=18548560]
+[node name="karazalstan" type="Area2D" parent="Background" unique_id=1684161999]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/carlson2" unique_id=1986717481]
-position = Vector2(-731.30554, -352.7875)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/karazalstan" unique_id=470692628]
+position = Vector2(-313.22223, 237.25)
+shape = SubResource("RectangleShape2D_mb7s7")
+
+[node name="drawerleft" type="Area2D" parent="Background" unique_id=1055066141]
+script = ExtResource("8_01y1d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/drawerleft" unique_id=178612202]
+position = Vector2(-214.55556, 22.700006)
 shape = SubResource("RectangleShape2D_0f4jx")
+
+[node name="drawerright" type="Area2D" parent="Background" unique_id=138417202]
+script = ExtResource("9_42v8c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/drawerright" unique_id=554404876]
+position = Vector2(-34.444443, 161.00002)
+shape = SubResource("RectangleShape2D_0f4jx")
+
+[node name="nightraid" type="Area2D" parent="Background" unique_id=28220837]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/nightraid" unique_id=724750520]
+position = Vector2(-297.33334, 51.350002)
+shape = SubResource("RectangleShape2D_i0wn2")
+
+[node name="partmanifest" type="Area2D" parent="Background" unique_id=1927821270]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/partmanifest" unique_id=1540537064]
+position = Vector2(-71.52779, 170.5)
+shape = SubResource("RectangleShape2D_l46xq")
+
+[node name="ship1" type="Area2D" parent="Background" unique_id=118935435]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/ship1" unique_id=1880421071]
+position = Vector2(-191.33333, -426.1)
+shape = SubResource("RectangleShape2D_v7lnt")
+
+[node name="ship2" type="Area2D" parent="Background" unique_id=1597873801]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/ship2" unique_id=1860915268]
+position = Vector2(-190, -378.4)
+shape = SubResource("RectangleShape2D_v7lnt")
+
+[node name="ship3" type="Area2D" parent="Background" unique_id=1597117587]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/ship3" unique_id=969067867]
+position = Vector2(-190, -330.8)
+shape = SubResource("RectangleShape2D_v7lnt")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1560669151]
 zoom = Vector2(0.081, 0.137)
@@ -243,10 +292,16 @@ one_shot = true
 [connection signal="input_event" from="Background/wallMap" to="UI/ManualView" method="_on_wall_map_input_event"]
 [connection signal="input_event" from="Background/topSecret" to="UI/ManualView" method="_on_top_secret_input_event"]
 [connection signal="input_event" from="Background/peacefire" to="UI/ManualView" method="_on_peacefire_input_event"]
-[connection signal="input_event" from="Background/celebration" to="UI/ManualView" method="_on_celebration_input_event"]
 [connection signal="input_event" from="Background/intercept" to="UI/ManualView" method="_on_intercept_input_event"]
 [connection signal="input_event" from="Background/carlson" to="UI/ManualView" method="_on_carlson_input_event"]
 [connection signal="input_event" from="Background/panelproblem" to="UI/ManualView" method="_on_panelproblem_input_event"]
 [connection signal="input_event" from="Background/grost" to="UI/ManualView" method="_on_grost_input_event"]
-[connection signal="input_event" from="Background/carlson2" to="UI/ManualView" method="_on_carlson_2_input_event"]
+[connection signal="input_event" from="Background/karazalstan" to="UI/ManualView" method="_on_karazalstan_input_event"]
+[connection signal="input_event" from="Background/drawerleft" to="Background/drawerleft" method="_on_input_event"]
+[connection signal="input_event" from="Background/drawerright" to="Background/drawerright" method="_on_input_event"]
+[connection signal="input_event" from="Background/nightraid" to="UI/ManualView" method="_on_nightraid_input_event"]
+[connection signal="input_event" from="Background/partmanifest" to="UI/ManualView" method="_on_partmanifest_input_event"]
+[connection signal="input_event" from="Background/ship1" to="UI/ManualView" method="_on_ship_1_input_event"]
+[connection signal="input_event" from="Background/ship2" to="UI/ManualView" method="_on_ship_2_input_event"]
+[connection signal="input_event" from="Background/ship3" to="UI/ManualView" method="_on_ship_3_input_event"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

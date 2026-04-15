@@ -1,0 +1,29 @@
+Title: Part Manifest
+
+Page 1
+| Part ID             | Part Type    | Sending Nation   | Receiving Nation    | Import Code | Manufacturer       |
+| ------------------- | ------------ | ---------------- | ------------------- | ----------- | ------------------ |
+| D1E467831DAC2D4     | Panel A4     | Belmari Republic | Seltsam Territories | 15          | Belmari Forgeworks |
+| 130EA52447DAF93     | Panel A3     | Otechestva       | Seltsam Territories | 33          | Mantle Shipyards   |
+| 272E9890E71B1E9     | Panel A4     | Otechestva       | Vesperra            | 45          | Belmari Forgeworks |
+| 4058389F83CC645     | Panel A4-I   | Karazalstan      | Belmari Republic    | 13          | 5-Second Solutions |
+| 03B15B707866116     | Panel A4     | Belmari Republic | Seltsam Territories | 20          | Belmari Forgeworks |
+| 3D75FA8B139C3CE     | Panel A4-I   | Vesperra         | Otechestva          | 23          | Mantle Shipyards   |
+| CDCFA808D4ADFEF     | Panel A3     | Otechestva       | Vesperra            | 55          | Mantle Shipyards   |
+| 086D8DA7A0FBABA     | Panel A4     | Belmari Republic | Karazalstan         | 70          | Belmari Forgeworks |
+| 503E929502B8920     | Panel A4-I   | Karazalstan      | Seltsam Territories | 43          | 5-Second Solutions |
+| EE8497224CB8557     | Panel A4-I   | Karazalstan      | Belmari Republic    | 95          | 5-Second Solutions |
+->
+Page 2
+[b]Manufacturers[/b]
+- Mantle Shipyards
+- 5-Second Solutions
+- Belmari Forgeworks
+[b]Shippers[/b]
+- Siltrunners Co.
+- RISK Logistics
+- Belmari Frontline Operations (BFO)
+[b]Military Contrators[/b]
+- Anvil Aviation
+- ORLOcorp
+- Manual Armaments

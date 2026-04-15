@@ -5,6 +5,7 @@ extends RichTextLabel
 @onready var timer = get_parent().get_parent().get_child(3)
 
 func displayPage() -> void:
+	get_child(0).visible = true
 	get_child(1).visible = true
 	clear()
 	if (currentManual != ""):
@@ -21,6 +22,7 @@ func displayPage() -> void:
 			contents = file.get_line()
 
 func hidePage() -> void:
+	get_child(0).visible = false
 	get_child(1).visible = false
 	get_child(2).visible = false
 	clear()
@@ -56,11 +58,7 @@ func _on_top_secret_input_event(viewport: Node, event: InputEvent, shape_idx: in
 
 func _on_peacefire_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
-		currentManual = "res://otechestvoPeacefire.txt"
-
-func _on_celebration_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
-		currentManual = "res://celebration.txt"
+		currentManual = "res://newstoday.txt"
 
 func _on_intercept_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
@@ -78,6 +76,26 @@ func _on_grost_input_event(viewport: Node, event: InputEvent, shape_idx: int) ->
 	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
 		currentManual = "res://grost.txt"
 
-func _on_carlson_2_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_karazalstan_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
-		currentManual = "res://carlson2.txt"
+		currentManual = "res://karazalstan.txt"
+
+func _on_nightraid_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).drawer1open):
+		currentManual = "res://nightraid.txt"
+
+func _on_partmanifest_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).drawer2open):
+		currentManual = "res://partmanifest.txt"
+
+func _on_ship_1_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://ship1.txt"
+
+func _on_ship_2_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://ship2.txt"
+
+func _on_ship_3_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://ship3.txt"

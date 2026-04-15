@@ -1,0 +1,8 @@
+Title: Breaking Major Karazalstan Data Leak
+
+Page 1
+Karazalstan has just announced that their government databases have been [b]Compromised[/b]. Thousands of files have been revealed this morning, from possible invasion plans to experimental combat aircraft designs.
+
+The most shocking discovery was a file filled with Karazalstan's security codes, with some codes that are possibly still in use today.
+
+Our sources are still decrypting the information, but a pattern has already emerged: all codes start with the 3 digits 3 1 7.

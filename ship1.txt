@@ -1,0 +1,6 @@
+Title: Shipping Log CDCFA808D4ADFEF
+
+Page 1
+| Part     | Manufacturer     | Shipper        | Width | Height | Class |
+| -------- | ---------------- | -------------- | ----- | ------ | ----- |
+| Panel A3 | Mantle Shipyards | RISK Logistics | 14.77 | 24.04  | 5     |
