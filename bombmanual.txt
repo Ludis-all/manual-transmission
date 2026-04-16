@@ -1,0 +1,23 @@
+Title: Bomb Info Manual
+
+Page 1
+This bomb has been brought to you by ORLOcorp.
+
+[b][i]ORLOcorp: bringing down what you built up[/i][/b]
+
+->
+Page 2
+
+[b]Components[/b]
+
+| Part       | Manufacturer       |
+| ---------- | ------------------ |
+| Detonator  | ORLOcorp           |
+| Memory     | 5-Second Systems   |
+| Power      | 5-Second Systems   |
+| Casing1    | Anvil Aviation     |
+| Casing2    | Anvil Aviation     |
+| Panel      | Belmari Forgeworks |
+| Wiring     | Manual Armaments   |
+| Controller | Manual Armaments   |
+| Payload    | ???                |

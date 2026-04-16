@@ -1,0 +1,21 @@
+Title: Company Identification Manual
+
+Page 1
+[b]Corporation Registration Records[/b]
+Companies listed within the ICCM International Coalition of Corporation Management database have global trading rights. See section A.13.D.1 for information on global trade arbitration.
+
+| Corporation                        | Location | Code |
+| ---------------------------------- | -------- | ---- |
+| Mantle Shipyards                   | OTE      | 730  |
+| RISK Logistics                     | VES      | 651  |
+| Siltrunners Co.                    | SEL      | 014  |
+| Manual Armaments                   | KAR      | 328  |
+| Anvil Aviation                     | BEL      | 505  |
+| Belmari Frontline Operations (BFO) | BEL      | 181  |
+| ORLOcorp                           | OTE      | 323  |
+| 5-Second Solutions                 | SEL      | 321  |
+| Belmari Forgeworks                 | BEL      | 103  |
+[b]Applying Corporation Codes[/b]
+Under international law corporations must apply their corresponding identification code to security codes.
+- For [b]WEST[/b] and [b]CENTER[/b] nations, the [b]Last Digit[/b] from the code is used for identification
+- For [b]EAST[/b] nations, the [b]2nd Digit[/b] from the code is used for identification

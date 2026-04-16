@@ -99,3 +99,27 @@ func _on_ship_2_input_event(viewport: Node, event: InputEvent, shape_idx: int) -
 func _on_ship_3_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
 		currentManual = "res://ship3.txt"
+
+func _on_relations_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://relations.txt"
+
+func _on_siltco_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://siltco.txt"
+
+func _on_battlefield_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://battlefield.txt"
+
+func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://bombinfo.txt"
+
+func _on_company_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).gameOn):
+		currentManual = "res://company.txt"
+
+func _on_bombmanual_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if (event.is_action_released("Left Click") && get_tree().root.get_child(0).get_child(0).get_child(2).panelmanual):
+		currentManual = "res://bombmanual.txt"

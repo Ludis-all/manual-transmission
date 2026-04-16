@@ -1,0 +1,66 @@
+Title: Defusal Basics Manual
+
+Page 1
+In the event of field demolition, wartime combat, or industrial sabotage, you may find yourself sitting in front of the ORLOcorp heavy demolition charge.
+
+The ORLOcorp heavy demolition charge embeds a small nuclear payload in a package suitable for efficient on-foot transport (15.3 kg). While it can be carried by just a single soldier, it carries enough fissile material to cause a localized fallout within a 1.6 to 1.8 kilometer radius, exposing nearby electronics and organic material to dangerously high radiation levels.
+
+This guide provided by the Belmari Republic Armed Military Ministry (BRAMM) will review the basics of arm / disarm code entry in the event of emergency defusal or strategic reactivation of ORLOcorp ordinance.
+
+[b]Arming the Device[/b]
+
+The following steps will assist with the activation of the ORLOcorp heavy demolition charge. Before reactivation, check with your assigned officer for permission. Unauthorized detonation of ordnance without the consent of Belmari High-Command or qualified military personal will result in military discipline.
+
+1. Locate the button on the back panel of the explosive charge
+2. Press and hold the button for 5 seconds
+3. Release the button once the indicator light on the left of the display lights up
+4. Wait for the automatically generated disarm code to flash
+5. Use the next 10 minutes to vacate the area while the device detonates
+->
+Page 2
+[i]The page is tattered[/i]
+->
+Page 3
+[i]The page is tattered[/i]
+->
+Page 4
+[i]The page is tattered[/i]
+->
+Page 5
+[i]The page is tattered[/i]
+->
+Page 6
+[i]The page is tattered[/i]
+->
+Page 7
+[i]The page is tattered[/i]
+->
+Page 8
+[i]The page is tattered[/i]
+->
+Page 9
+[i]The page is tattered[/i]
+->
+Page 10
+[i]The page is tattered[/i]
+->
+Page 11
+[i]The page is tattered[/i]
+->
+Page 12
+[i]The page is tattered[/i]
+->
+Page 13
+[i]The page is tattered[/i]
+->
+Page 14
+[b]Disarming the Device[/b]
+
+The following steps will assist with the activation of the ORLOcorp heavy demolition charge. Before reactivation, check with your assigned officer for permission. Unauthorized deactivation of ordnance without the consent of Belmari High-Command or qualified military personal will result in forced labor, re-education program attendance, or execution.
+
+1. Enter the 10 digit disarm code provided during the arming sequence
+2. If the last digit is odd, flip the blue switch
+3. If the first digit is even, press the leftmost green button
+4. If the sum of the first four digits is less than 10, press the rightmost green button
+5. Connect each wire in a straight line to receive the 7th digit of the security code
+6. Press the red button to submit the deactivation code

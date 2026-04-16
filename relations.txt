@@ -1,0 +1,6 @@
+Title: Worldwide Relations Manual
+
+Page 1
+...With the [b]Material Standardization Agreement[/b] signed 8 years ago, all manufacturing companies are required to start serial numbers with the import codes for the associated items. [b]Recently we've seen the effects of this, with password-protected military systems including shipping codes in their 4th and 5th digits[/b]
+
+While import codes remain consistent with international law, part identification numbers do not. Engineers have somewhat circumvented the law by including the 5th digit of the [b]part identification number[/b] immediately following the import code.

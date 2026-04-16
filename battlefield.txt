@@ -1,0 +1,21 @@
+Title: Battlefield Engineers 15th ed. - Taming the Explosion
+
+Page 1
+
+[b]Picking your Panels[/b]
+Modern explosives are less about the explosive itself and more about the shell you place it in. With bombs going nuclear, having a better [b]Containment Vessel[/b] and [b]Improved Internal Circuitry[/b] are how you get bigger explosions!
+
+| Class | Payload |
+| ----- | ------- |
+| 1     | 15 kt   |
+| 2     | 12 kt   |
+| 3     | 9 kt    |
+| 4     | 8 kt    |
+| 5     | 7.5 kt  |
+If you want something that'll pack a real punch, nothing beats the tried and true [b]A4[/b] from [b]Belmari Forgeworks![/b]
+
+[b]Did You Know?[b/]
+
+Engineers always write things down! Working with explosives can be dangerous work, so a good engineer always remembers the [b]Size of a Bomb's Payload![/b]
+
+In Belmari, they always write down the explosion size (kilotons) in the last 4 digits of their codes!

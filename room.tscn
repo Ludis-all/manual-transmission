@@ -5,10 +5,21 @@
 [ext_resource type="Texture2D" uid="uid://csjennosqiw8f" path="res://WhiteBackground.png" id="3_ka7wq"]
 [ext_resource type="Texture2D" uid="uid://6p1oxu4ppwp0" path="res://Map-1.png" id="4_8cv3p"]
 [ext_resource type="Texture2D" uid="uid://b44weigl1gq3e" path="res://roomnodrawers.png" id="5_8cv3p"]
+[ext_resource type="Texture2D" uid="uid://dvxl55x1etoej" path="res://switchoff.png" id="5_xorjj"]
+[ext_resource type="Script" uid="uid://u1rpyy6682km" path="res://bomb.gd" id="6_xorjj"]
 [ext_resource type="Script" uid="uid://dib8uqvp3jfal" path="res://lightbulb.gd" id="7_01y1d"]
 [ext_resource type="Texture2D" uid="uid://dk6p0i7728bfp" path="res://BlackBackground.png" id="7_8cv3p"]
 [ext_resource type="Script" uid="uid://c0ek4c722ykow" path="res://drawer_1.gd" id="8_01y1d"]
 [ext_resource type="Script" uid="uid://dyirmk5kbjc8v" path="res://drawer_2.gd" id="9_42v8c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nj41c"]
+size = Vector2(380.737, 397.21216)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i44yh"]
+size = Vector2(60.008064, 102.67482)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yskd2"]
+size = Vector2(124.95524, 54.452015)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vuv"]
 size = Vector2(13.722221, 101.59998)
@@ -48,6 +59,33 @@ size = Vector2(107.166664, 75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v7lnt"]
 size = Vector2(188, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kbdc6"]
+size = Vector2(92.6667, 72.499985)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lha0o"]
+size = Vector2(42.444427, 152.70001)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qfj0j"]
+size = Vector2(43.77775, 122.600006)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2pwx"]
+size = Vector2(116.61112, 109.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_247ak"]
+size = Vector2(76.88887, 91.59998)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qoumo"]
+size = Vector2(56, 72.700005)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ho83x"]
+size = Vector2(76.72224, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4edck"]
+size = Vector2(225.11111, 298.2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uh4d7"]
+size = Vector2(148.09918, 64.27429)
 
 [node name="Room" type="Node2D" unique_id=1727501541]
 script = ExtResource("1_4o3f6")
@@ -170,6 +208,45 @@ offset_bottom = -1084.0
 theme_override_font_sizes/font_size = 100
 text = "Otechestva"
 
+[node name="bomb" type="Sprite2D" parent="UI" unique_id=1303798998]
+visible = false
+z_index = 18
+scale = Vector2(7.7987423, 5.2879543)
+texture = ExtResource("5_xorjj")
+script = ExtResource("6_xorjj")
+
+[node name="panelmanual" type="Area2D" parent="UI/bomb" unique_id=1343779633]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/panelmanual" unique_id=1346756534]
+position = Vector2(-261.7433, 0.79803514)
+scale = Vector2(1.0000004, 1)
+shape = SubResource("RectangleShape2D_nj41c")
+
+[node name="switch" type="Area2D" parent="UI/bomb" unique_id=1246404792]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/switch" unique_id=1437286718]
+position = Vector2(67.19032, 50.781467)
+shape = SubResource("RectangleShape2D_i44yh")
+
+[node name="redbutton" type="Area2D" parent="UI/bomb" unique_id=513049821]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/redbutton" unique_id=853882578]
+position = Vector2(192.94818, 13.05422)
+shape = SubResource("RectangleShape2D_yskd2")
+
+[node name="digitInput" type="LineEdit" parent="UI" unique_id=308950941]
+visible = false
+z_index = 50
+z_as_relative = false
+layout_mode = 0
+offset_left = 118.0
+offset_top = -829.0
+offset_right = 618.0
+offset_bottom = -711.0
+scale = Vector2(4, 4)
+theme_override_font_sizes/font_size = 80
+max_length = 10
+
 [node name="Background" type="Sprite2D" parent="." unique_id=1778636829]
 scale = Vector2(9, 5)
 texture = ExtResource("5_8cv3p")
@@ -281,6 +358,62 @@ shape = SubResource("RectangleShape2D_v7lnt")
 position = Vector2(-190, -330.8)
 shape = SubResource("RectangleShape2D_v7lnt")
 
+[node name="relations" type="Area2D" parent="Background" unique_id=516650982]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/relations" unique_id=2029295950]
+position = Vector2(-489.33334, 92.950005)
+shape = SubResource("RectangleShape2D_kbdc6")
+
+[node name="siltco" type="Area2D" parent="Background" unique_id=1815515013]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/siltco" unique_id=430032864]
+position = Vector2(360.77777, -23.35)
+shape = SubResource("RectangleShape2D_lha0o")
+
+[node name="battlefield" type="Area2D" parent="Background" unique_id=1886241140]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/battlefield" unique_id=379847816]
+position = Vector2(192, -356.30002)
+shape = SubResource("RectangleShape2D_qfj0j")
+
+[node name="bombinfo" type="Area2D" parent="Background" unique_id=1608247118]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/bombinfo" unique_id=1234392442]
+position = Vector2(276.02777, -335.4)
+shape = SubResource("RectangleShape2D_u2pwx")
+
+[node name="company" type="Area2D" parent="Background" unique_id=490024090]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/company" unique_id=430173506]
+position = Vector2(379.33334, -302.6)
+shape = SubResource("RectangleShape2D_247ak")
+
+[node name="bombleft" type="Area2D" parent="Background" unique_id=1347685741]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/bombleft" unique_id=1174209628]
+position = Vector2(22.333334, 0.8000002)
+shape = SubResource("RectangleShape2D_qoumo")
+
+[node name="bombright" type="Area2D" parent="Background" unique_id=173843689]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/bombright" unique_id=225740225]
+position = Vector2(98.416664, 7.699997)
+shape = SubResource("RectangleShape2D_ho83x")
+
+[node name="bombmanual" type="Area2D" parent="Background" unique_id=1781080859]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/bombmanual" unique_id=1005008996]
+position = Vector2(-237, -22.899994)
+shape = SubResource("RectangleShape2D_4edck")
+
+[node name="bombtop" type="Area2D" parent="Background" unique_id=68691213]
+position = Vector2(3.1111112, -70.6)
+scale = Vector2(0.8665269, 1.0575908)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/bombtop" unique_id=256715227]
+position = Vector2(64.04958, 22.13715)
+shape = SubResource("RectangleShape2D_uh4d7")
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1560669151]
 zoom = Vector2(0.081, 0.137)
 
@@ -288,6 +421,9 @@ zoom = Vector2(0.081, 0.137)
 wait_time = 5.0
 one_shot = true
 
+[connection signal="input_event" from="UI/bomb/panelmanual" to="UI/bomb" method="_on_panelmanual_input_event"]
+[connection signal="input_event" from="UI/bomb/switch" to="UI/bomb" method="_on_switch_input_event"]
+[connection signal="input_event" from="UI/bomb/redbutton" to="." method="_on_redbutton_input_event"]
 [connection signal="input_event" from="Background/Lightbulb" to="Background/Lightbulb" method="_on_input_event"]
 [connection signal="input_event" from="Background/wallMap" to="UI/ManualView" method="_on_wall_map_input_event"]
 [connection signal="input_event" from="Background/topSecret" to="UI/ManualView" method="_on_top_secret_input_event"]
@@ -304,4 +440,13 @@ one_shot = true
 [connection signal="input_event" from="Background/ship1" to="UI/ManualView" method="_on_ship_1_input_event"]
 [connection signal="input_event" from="Background/ship2" to="UI/ManualView" method="_on_ship_2_input_event"]
 [connection signal="input_event" from="Background/ship3" to="UI/ManualView" method="_on_ship_3_input_event"]
+[connection signal="input_event" from="Background/relations" to="UI/ManualView" method="_on_relations_input_event"]
+[connection signal="input_event" from="Background/siltco" to="UI/ManualView" method="_on_siltco_input_event"]
+[connection signal="input_event" from="Background/battlefield" to="UI/ManualView" method="_on_battlefield_input_event"]
+[connection signal="input_event" from="Background/bombinfo" to="UI/ManualView" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="Background/company" to="UI/ManualView" method="_on_company_input_event"]
+[connection signal="input_event" from="Background/bombleft" to="UI/bomb" method="_on_bombleft_input_event"]
+[connection signal="input_event" from="Background/bombright" to="UI/bomb" method="_on_bombright_input_event"]
+[connection signal="input_event" from="Background/bombmanual" to="UI/ManualView" method="_on_bombmanual_input_event"]
+[connection signal="input_event" from="Background/bombtop" to="UI/bomb" method="_on_bombtop_input_event"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

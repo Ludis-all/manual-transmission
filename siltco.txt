@@ -1,0 +1,13 @@
+Title: Siltrunners Co. Private Communications
+
+Page 1
+[b]Re: EIS-220 Concerns[/b]
+We've done some more testing, and EIS-220 keeps interfering with electronics. It's even worse than EIS-210, and I'm sure all of you remember how that model performed.
+
+In our testing we've found that those new 10-digit memory cards from 5-SS are especially vulnerable. It could have something to do with their new chip architecture, but we can't say for sure.
+
+We've made a couple of adjustments, but the system won't be fool-proof for at least another 6 months. Just tell anyone who ships something with a 10-digit code in it to [b]add 4 to the last 3 digits.[/b]
+
+It'll save us all a headache...
+
+-Dr. Martin
