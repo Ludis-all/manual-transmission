@@ -21,6 +21,12 @@ size = Vector2(60.008064, 102.67482)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yskd2"]
 size = Vector2(124.95524, 54.452015)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xd51r"]
+size = Vector2(33.722572, 62.58369)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xorjj"]
+load_path = "res://.godot/imported/WhiteBackground.png-2756f76b389a819b9eddb36ccd64df30.ctex"
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vuv"]
 size = Vector2(13.722221, 101.59998)
 
@@ -234,6 +240,68 @@ shape = SubResource("RectangleShape2D_i44yh")
 position = Vector2(192.94818, 13.05422)
 shape = SubResource("RectangleShape2D_yskd2")
 
+[node name="Wire1" type="Area2D" parent="UI/bomb" unique_id=672287653]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/Wire1" unique_id=91476156]
+position = Vector2(-252.4762, -122.064186)
+shape = SubResource("RectangleShape2D_xd51r")
+
+[node name="Wire2" type="Area2D" parent="UI/bomb" unique_id=482174397]
+position = Vector2(0.7693548, 105.33374)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/Wire2" unique_id=1600145335]
+position = Vector2(-252.4762, -122.064186)
+shape = SubResource("RectangleShape2D_xd51r")
+
+[node name="Wire3" type="Area2D" parent="UI/bomb" unique_id=1050029571]
+position = Vector2(2.3080645, 229.01105)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/Wire3" unique_id=604264209]
+position = Vector2(-252.4762, -122.064186)
+shape = SubResource("RectangleShape2D_xd51r")
+
+[node name="End1" type="Area2D" parent="UI/bomb" unique_id=1504285107]
+position = Vector2(209.39273, -1.1346545)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/End1" unique_id=1331912474]
+position = Vector2(-248.5653, -122.064186)
+shape = SubResource("RectangleShape2D_xd51r")
+
+[node name="End2" type="Area2D" parent="UI/bomb" unique_id=966755467]
+position = Vector2(210.93144, 104.19909)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/End2" unique_id=934202223]
+position = Vector2(-248.5653, -122.064186)
+shape = SubResource("RectangleShape2D_xd51r")
+
+[node name="End3" type="Area2D" parent="UI/bomb" unique_id=933292807]
+position = Vector2(206.18709, 223.33778)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UI/bomb/End3" unique_id=867084285]
+position = Vector2(-248.5653, -122.064186)
+shape = SubResource("RectangleShape2D_xd51r")
+
+[node name="wire1" type="Sprite2D" parent="UI/bomb" unique_id=120445579]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-142.84352, -126.13574)
+scale = Vector2(0.50025856, 1)
+texture = SubResource("CompressedTexture2D_xorjj")
+
+[node name="wire2" type="Sprite2D" parent="UI/bomb" unique_id=1231872847]
+visible = false
+modulate = Color(0, 0.03137255, 1, 1)
+position = Vector2(-140.53549, -15.128723)
+scale = Vector2(0.50025856, 1)
+texture = SubResource("CompressedTexture2D_xorjj")
+
+[node name="wire3" type="Sprite2D" parent="UI/bomb" unique_id=518363864]
+visible = false
+modulate = Color(0.23529412, 1, 0, 1)
+position = Vector2(-138.2274, 107.41393)
+scale = Vector2(0.50025856, 1)
+texture = SubResource("CompressedTexture2D_xorjj")
+
 [node name="digitInput" type="LineEdit" parent="UI" unique_id=308950941]
 visible = false
 z_index = 50
@@ -424,6 +492,12 @@ one_shot = true
 [connection signal="input_event" from="UI/bomb/panelmanual" to="UI/bomb" method="_on_panelmanual_input_event"]
 [connection signal="input_event" from="UI/bomb/switch" to="UI/bomb" method="_on_switch_input_event"]
 [connection signal="input_event" from="UI/bomb/redbutton" to="." method="_on_redbutton_input_event"]
+[connection signal="input_event" from="UI/bomb/Wire1" to="UI/bomb" method="_on_wire_1_input_event"]
+[connection signal="input_event" from="UI/bomb/Wire2" to="UI/bomb" method="_on_wire_2_input_event"]
+[connection signal="input_event" from="UI/bomb/Wire3" to="UI/bomb" method="_on_wire_3_input_event"]
+[connection signal="input_event" from="UI/bomb/End1" to="UI/bomb" method="_on_end_1_input_event"]
+[connection signal="input_event" from="UI/bomb/End2" to="UI/bomb" method="_on_end_2_input_event"]
+[connection signal="input_event" from="UI/bomb/End3" to="UI/bomb" method="_on_end_3_input_event"]
 [connection signal="input_event" from="Background/Lightbulb" to="Background/Lightbulb" method="_on_input_event"]
 [connection signal="input_event" from="Background/wallMap" to="UI/ManualView" method="_on_wall_map_input_event"]
 [connection signal="input_event" from="Background/topSecret" to="UI/ManualView" method="_on_top_secret_input_event"]
